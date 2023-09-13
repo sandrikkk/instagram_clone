@@ -20,7 +20,9 @@ services:
       - postgres
     env_file:
       - .env
-    entrypoint: "python manage.py runserver 0.0.0.0:8000"
+    entrypoint: ''
+    command: '/app/scripts/docker-entrypoint.sh'
+
 
 volumes:
   pgdata:

@@ -18,4 +18,5 @@ RUN chmod +x /app/scripts/docker-entrypoint.sh
 
 
 # Set the entrypoint for the container
+ENTRYPOINT ["/app/scripts/docker-entrypoint.sh"]
 EXPOSE 8000
